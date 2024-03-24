@@ -27,7 +27,7 @@ gallery_placeholder = st.empty()
 PREDEFINED_INPUT = {
     "prompt": "Low poly pixelated of close-up of uploaded image, ps2 playstation psx gamecube game gta head 3d --style ddCHhSumaNyOrL1Q",
     "instant_id_strength": 0.8,
-    "neg_prompt": "boring"  # Corrected indentation here
+    "neg_prompt": "the worst image"  # Corrected indentation here
 }
 
 def configure_sidebar() -> None:
