@@ -8,7 +8,7 @@ from streamlit_image_select import image_select
 from typing import Any
 
 # UI configurations
-st.set_page_config(page_title="Replicate Image Generator",
+st.set_page_config(page_title="GlowCorp Character Factory",
                    page_icon=":sparkle:",
                    layout="wide")
 st.markdown("# :rainbow[GlowCorp Character Factory]🏭")
