@@ -9,7 +9,7 @@ from typing import Any
 
 # UI configurations
 st.set_page_config(page_title="Replicate Image Generator",
-                   page_icon=":star:",
+                   page_icon=":sparkle:",
                    layout="wide")
 st.markdown("# :rainbow[GlowCorp Character Factory]🏭")
 
