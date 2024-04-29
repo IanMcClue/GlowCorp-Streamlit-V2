@@ -148,13 +148,13 @@ def main_page(submitted: bool, style: str, uploaded_image: Any) -> None:
         pass
 
     # Footer
-    st.divider()
-    footer = """<div style="text-align: center;">
-                <a href="https://visitorbadge.io/status?path=https%3A%2F%2FGlowCorp.streamlit.app%2F">
-                    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2FGlowCorp.streamlit.app%2F&label=GlowCorp&labelColor=%23ffffff&countColor=%23000000&style=plastic" />
-                </a>
-            </div>"""
-    st.markdown(footer, unsafe_allow_html=True)
+st.divider()
+footer = """<div style="text-align: center;">
+            <a href="https://visitorbadge.io/status?path=https%3A%2F%2Faurascope.streamlit.app%2F">
+                <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Faurascope.streamlit.app%2F&label=aurascope&labelColor=%23ffffff&countColor=%23000000&style=plastic" />
+            </a>
+        </div>"""
+st.markdown(footer, unsafe_allow_html=True)
 
     # Gallery display for inspo
     with gallery_placeholder.container():
