@@ -1,3 +1,6 @@
+Here's the corrected version of your code with the mentioned indentation issues fixed:
+
+```python
 import replicate
 import streamlit as st
 import requests
@@ -22,7 +25,6 @@ generated_images_placeholder = st.empty()
 gallery_placeholder = st.empty()
 
 
-# Predefined input data for the model
 # Predefined input data for the model
 PREDEFINED_INPUT = {
     "prompt": "Low poly pixelated of close-up of uploaded image, ps2 playstation psx gamecube game gta head 3d --style ddCHhSumaNyOrL1Q",
@@ -50,17 +52,17 @@ def configure_sidebar() -> None:
                 "Submit", use_container_width=True)
 
             # Credits and resources
-        st.markdown(
-            """
-            ---
-            Follow 🚺 Curetique(owners of GlowCorp✨) on:
+            st.markdown(
+                """
+                ---
+                Follow 🚺 Curetique(owners of GlowCorp✨) on:
 
-            Tiktok → [@curetique](https://www.tiktok.com/@curetique)
+                Tiktok → [@curetique](https://www.tiktok.com/@curetique)
 
-            """
-        )
+                """
+            )
 
-        return submitted, style, uploaded_image
+    return submitted, style, uploaded_image
 
 def main_page(submitted: bool, style: str, uploaded_image: Any) -> None:
     """Main page layout and logic for generating images.
@@ -77,7 +79,7 @@ def main_page(submitted: bool, style: str, uploaded_image: Any) -> None:
     if submitted:
         with st.status('👩🏾‍🍳 Whipping up your character...', expanded=True) as status:
             st.write("⚙️ Model initiated")
-            st.write("🙆‍♀️ Stand up and strecth in the meantime")
+            st.write("🙆‍♀️ Stand up and stretch in the meantime")
             try:
                 # Only call the API if the "Submit" button was pressed
                 if submitted:
@@ -148,13 +150,13 @@ def main_page(submitted: bool, style: str, uploaded_image: Any) -> None:
         pass
 
     # Footer
-st.divider()
-footer = """<div style="text-align: center;">
-            <a href="https://visitorbadge.io/status?path=https%3A%2F%2Faurascope.streamlit.app%2F">
-                <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Faurascope.streamlit.app%2F&label=aurascope&labelColor=%23ffffff&countColor=%23000000&style=plastic" />
-            </a>
-        </div>"""
-st.markdown(footer, unsafe_allow_html=True)
+    st.divider()
+    footer = """<div style="text-align: center;">
+                <a href="https://visitorbadge.io/status?path=https%3A%2F%2Faurascope.streamlit.app%2F">
+                    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Faurascope.streamlit.app%2F&label=aurascope&labelColor=%23ffffff&countColor=%23000000&style=plastic" />
+                </a>
+            </div>"""
+    st.markdown(footer, unsafe_allow_html=True)
 
     # Gallery display for inspo
     with gallery_placeholder.container():
@@ -177,7 +179,4 @@ def main():
     The main page function then generates images based on these inputs.
     """
     submitted, style, uploaded_image = configure_sidebar()
-    main_page(submitted, style, uploaded_image)
-
-if __name__ == "__main__":
-    main()
+    main
