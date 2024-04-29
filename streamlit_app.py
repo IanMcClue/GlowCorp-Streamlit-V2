@@ -1,6 +1,3 @@
-Here's the corrected version of your code with the mentioned indentation issues fixed:
-
-```python
 import replicate
 import streamlit as st
 import requests
